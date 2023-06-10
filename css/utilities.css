@@ -1,0 +1,33 @@
+/* Text colors */
+.text-primary {
+    color: rgba(15, 26, 67, 1);
+}
+
+.text-secondary {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+/* Button */
+.btn {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    line-height: 16px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 55px;
+
+}
+
+.btn-active {
+    font-size: 16px;
+    color: rgba(15, 26, 67, 1);
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    line-height: 16px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 55px;
+
+}
