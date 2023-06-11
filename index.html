@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
-
 
     <!-- tailwind css link -->
 
@@ -33,10 +31,11 @@
 
         <div class="bg-cover bg-center bg-no-repeat bg-[url('./Assets/images/home/dt-hero-banner.jpg')] border-t">
             <div class="container mx-auto px-16 py-12">
-                <h1 class="mb-16 leading-[22px]"> Home <i class="fa-sharp fa-solid fa-angle-right px-2"></i> <span
-                        class="font-bold">
-                        Products</span></h1>
-                <h1 class="mb-10">Products</h1>
+                <h1 class="mb-16 text-[16px] leading-[22px]"> Home <i class="fa-sharp fa-solid fa-angle-right px-2"></i>
+                    <span class="font-bold">
+                        Products</span>
+                </h1>
+                <h1 class="mb-10 text-[26px] leading-[30px] font-bold">Products</h1>
                 <h1 class="mb-10 text-[56px] leading-[72px] font-light"> Our products</h1>
                 <p class="w-1/2 mb-10 leading-6  ">Our company medicines treat serious illnesses and typically address
                     diseases with a limited number of treatment options. With a presence in approximately 100 countries,
@@ -49,7 +48,6 @@
                     <button class="btn w-[220px]">Products A-Z</button>
                 </div>
             </div>
-
         </div>
 
     </header>
@@ -133,18 +131,15 @@
                         <p class="text-primary text-[16px] leading-[24px] my-2">Until recently, medicines and
                             vaccines were mainly tested on men. This has had a detrimental
                             effect on the health outcomes of women around the</p>
-
                         <button class="btn w-[220px] bg-primary my-3"> Learn more</button>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- Products A-Z  -->
         <section class="bg-primary">
             <div class="container mx-auto px-16 py-16">
-
                 <div class="flex items-center gap-5">
                     <h1 class="text-[56px] leading-[72px] font-semibold">Products A-Z</h1>
 
@@ -381,11 +376,10 @@
     }
 </script>
 
+<!-- go to top  -->
 <script>
-    // Get the button
     let goTopButton = document.getElementById("goTop");
 
-    // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
@@ -396,7 +390,6 @@
         }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
