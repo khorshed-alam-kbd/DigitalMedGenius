@@ -115,7 +115,7 @@
                     <div class="relative">
                         <img src="./Assets/images/home/dt-Science & Innovation@2x.jpg" alt="">
 
-                        <div class="absolute bottom-1/3 left-1/3 ">
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
                             <img src="./Assets/images/home/Group 53 Copy@1x.png" alt="">
                         </div>
                     </div>
@@ -172,9 +172,13 @@
                     <div class="mb-5">
                         <div class="flex items-center gap-5 my-4">
                             <h1 class=" text-primary text-[56px] leading-[76px] font-light">Cancer</h1>
-                            <img src="./Assets/images/Minus@2x.png" class="w-8 h-8" alt="minus-sign">
+
+                            <button onclick="toggleCollapsible()" id="toggle-button">
+                                <img src="./Assets/images/Minus@2x.png" class="w-8 h-8" alt="minus-sign">
+                            </button>
+
                         </div>
-                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 ">
+                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5" id="collapsible-content">
                             <div class="border-b-2 p-4">
                                 <img src="./Assets/images/home/Bitmap.png" alt="">
                                 <h2 class="text-primary text-[20px] leading-[27px] font-semibold my-3"> Avastin
@@ -320,14 +324,14 @@
                     class="w-8 border rounded-2xl absolute right-16 top-[-16px]">
             </button>
 
-            <div class="flex justify-between">
-                <div class="flex flex-col gap-5 w-1/3">
+            <div class="lg:flex justify-between">
+                <div class="flex flex-col gap-5 w-1/3 mb-5">
                     <h1 class="text-[18] leading-[20px] font-bold">DigitalMedGenius</h1>
                     <P class="text-[16] leading-[24px]"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Quisque ullamcorper dui eget leo <br> facilisis facilisis.
                     </P>
                 </div>
-                <div class="text-[16] leading-[16px] flex flex-col gap-5  ">
+                <div class="text-[16] leading-[16px] flex flex-col gap-5 mb-5">
                     <h1 class="text-[18] font-bold">Products</h1>
                     <p>Product X </p>
                     <p>Product Y </p>
@@ -343,7 +347,7 @@
             </div>
 
             <hr class="my-8">
-            <div class="flex justify-between ">
+            <div class="lg:flex justify-between ">
                 <div class="text-[14] leading-[20px] flex gap-5 ">
                     <p>© 2020 · All rights reserved</p>
                     <p>Privacy Policy</p>
@@ -371,31 +375,13 @@
         theme: {
             extend: {
                 colors: {
-                    primary: '#0F1A43',
+                    primary: 'rgba(15, 26, 67, 1)',
                 }
             }
         }
     }
 </script>
 
-<!-- go to top  -->
-<script>
-    let goTopButton = document.getElementById("goTop");
-
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            goTopButton.style.display = "block";
-        } else {
-            goTopButton.style.display = "none";
-        }
-    }
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
+<script src="./js/utilities.js"></script>
 
 </html>
